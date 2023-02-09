@@ -22,5 +22,11 @@ module.exports = (options, context) => {
       }
     },
     enhanceAppFiles: [path.resolve(__dirname, './client.js')],
+    additionalPages: [
+      {
+        path: '/sample-report/',
+        filePath: path.resolve(__dirname, 'missing-samples-report.md'),
+      },
+    ],
   }
 }
